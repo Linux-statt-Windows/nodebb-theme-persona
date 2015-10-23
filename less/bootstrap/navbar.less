@@ -17,6 +17,10 @@
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
 
+  -webkit-box-shadow: -1px -1px 4px 0px rgba(0,0,0,0.17);
+  -moz-box-shadow: -1px -1px 4px 0px rgba(0,0,0,0.17);
+  box-shadow: -1px -1px 4px 0px rgba(0,0,0,0.17);
+
   @media (min-width: @grid-float-breakpoint) {
     border-radius: @navbar-border-radius;
   }

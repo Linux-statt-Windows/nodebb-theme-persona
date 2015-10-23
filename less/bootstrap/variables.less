@@ -42,10 +42,13 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import url(//fonts.googleapis.com/css?family=Asap);
+@import url(//cdn.jsdelivr.net/font-hack/2.015/css/hack-extended.min.css);
+
+@font-family-sans-serif:  "Asap", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-monospace:   Hack, Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          14px;
@@ -144,28 +147,28 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              #094663;
+@btn-default-bg:                 #FFFFFF;
+@btn-default-border:             #678898;
 
-@btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-primary-color:              #094663;
+@btn-primary-bg:                 #FFFFFF;
+@btn-primary-border:             #5f8fd0;
 
-@btn-success-color:              #fff;
-@btn-success-bg:                 @brand-success;
+@btn-success-color:              #007d1c;
+@btn-success-bg:                 #38e05d;
 @btn-success-border:             darken(@btn-success-bg, 5%);
 
-@btn-info-color:                 #fff;
-@btn-info-bg:                    @brand-info;
-@btn-info-border:                darken(@btn-info-bg, 5%);
+@btn-info-color:                 #094663;
+@btn-info-bg:                    #FFFFFF;
+@btn-info-border:                #2c5b72;
 
-@btn-warning-color:              #fff;
-@btn-warning-bg:                 @brand-warning;
+@btn-warning-color:              #9d590b;
+@btn-warning-bg:                 #f8ad57;
 @btn-warning-border:             darken(@btn-warning-bg, 5%);
 
-@btn-danger-color:               #fff;
-@btn-danger-bg:                  @brand-danger;
+@btn-danger-color:               #6b1c07;
+@btn-danger-bg:                  #f14c21;
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
 
 @btn-link-disabled-color:        @gray-light;
@@ -491,19 +494,19 @@
 //## Define colors for form feedback states and, by default, alerts.
 
 @state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
+@state-success-bg:               #38e05d;
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
-@state-info-text:                #31708f;
-@state-info-bg:                  #d9edf7;
+@state-info-text:                #094663;
+@state-info-bg:                  #9dd2ec;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
 @state-warning-text:             #8a6d3b;
-@state-warning-bg:               #fcf8e3;
+@state-warning-bg:               #f8d782;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
 @state-danger-text:              #a94442;
-@state-danger-bg:                #f2dede;
+@state-danger-bg:                #f89b82;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
 
@@ -647,7 +650,7 @@
 @progress-border-radius:      @border-radius-base;
 
 //** Default progress bar color
-@progress-bar-bg:             @brand-primary;
+@progress-bar-bg:             #faa749;
 //** Success progress bar color
 @progress-bar-success-bg:     @brand-success;
 //** Warning progress bar color
@@ -655,7 +658,7 @@
 //** Danger progress bar color
 @progress-bar-danger-bg:      @brand-danger;
 //** Info progress bar color
-@progress-bar-info-bg:        @brand-info;
+@progress-bar-info-bg:        #faa749;
 
 
 //== List group
@@ -823,8 +826,8 @@
 //
 //##
 
-@code-color:                  #c7254e;
-@code-bg:                     #f9f2f4;
+@code-color:                  #eeeeee;
+@code-bg:                     #232323;
 
 @kbd-color:                   #fff;
 @kbd-bg:                      #333;
