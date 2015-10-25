@@ -27,12 +27,14 @@
 			<div>
 				<form class='form-horizontal'>
 
+					<!-- IF !username:disableEdit -->
 					<div class="control-group">
 						<label class="control-label" for="inputUsername">[[user:username]]</label>
 						<div class="controls">
 							<input class="form-control" type="text" id="inputUsername" placeholder="[[user:username]]" value="{username}">
 						</div>
 					</div>
+					<!-- ENDIF !username:disableEdit -->
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">[[user:email]]</label>
@@ -131,8 +133,20 @@
 				<div class="form-actions">
 					<a id="changePasswordBtn" href="#" class="btn btn-primary"><i class="hide fa fa-spinner fa-spin"></i> [[user:change_password]]</a>
 				</div>
-
 			</form>
+
+			<hr />
+
+			<label class="control-label">[[user:sso.title]]</label>
+			<div class="list-group">
+				<!-- BEGIN sso -->
+				<a class="list-group-item" href="{../url}" target="<!-- IF ../associated -->_blank<!-- ELSE -->_top<!-- ENDIF ../associated -->">
+					<!-- IF ../icon --><i class="fa {../icon}"></i><!-- ENDIF ../icon -->
+					<!-- IF ../associated -->[[user:sso.associated]]<!-- ELSE -->[[user:sso.not-associated]]<!-- ENDIF ../associated -->
+					{../name}
+				</a>
+				<!-- END sso -->
+			</div>
 		</div>
 	</div>
 
