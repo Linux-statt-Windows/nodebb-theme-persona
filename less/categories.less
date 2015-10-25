@@ -13,13 +13,17 @@
 			.icon {
 				font-size: 17px;
 				line-height: 17px;
-				padding: 13px;
+				padding: 15px;
 				border-radius: 50%;
 				margin-right: 15px;
-				min-width: 46px;
-				min-height: 46px;
+				min-width: 50px;
+				min-height: 50px;
 				margin-top: 2px;
-			}
+
+                -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.17);
+                -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.17);
+                box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.17);
+            }
 
 			img {
 				margin-right: 15px;
@@ -36,7 +40,11 @@
 
 				strong {
 					color: @gray-dark;
-				}
+				};
+                
+                a {
+                    color: #848484;    
+                }
 			}
 
 			@media (max-width: @screen-sm-max) {
@@ -59,11 +67,12 @@
 		}
 
 		.card {
-			border-left: 4px solid #ccc;
-			text-align: left;
-			margin-top: 2px;
+			border-left: 4px solid #000;
+            text-align: left;
+            margin-top: 2px;
 			overflow: hidden;
 			height: 53px;
+            font-size: 12px;
 
 			> * {
 				padding-left: 20px;
