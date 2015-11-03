@@ -1,0 +1,20 @@
+(function(module) {
+	"use strict";
+
+	var Theme = {};
+
+	Theme.defineWidgetAreas = function(areas, callback) {
+		areas = areas.concat([
+			{
+				name: "Categories Sidebar",
+				template: "categories.tpl",
+				location: "sidebar"
+			}
+		]);
+
+		callback(null, areas);
+	};
+
+	module.exports = Theme;
+
+}(module));
