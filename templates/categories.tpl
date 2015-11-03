@@ -3,6 +3,5 @@
 <ul class="categories" itemscope itemtype="http://www.schema.org/ItemList">
 	<!-- BEGIN categories -->
 	<!-- IMPORT partials/categories/item.tpl -->
-	<div widget-area="sidebar" class=""></div>
-    <!-- END categories -->
+  <!-- END categories -->
 </ul>
