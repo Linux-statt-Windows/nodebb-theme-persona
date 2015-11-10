@@ -1,10 +1,14 @@
 {
 	"id": "nodebb-theme-persona",
-  "library": "./widgets.js",
+  "library": "./theme.js",
     "hooks": [
         {
-            "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
-        }],
+          "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+        },
+        {
+          "hook": "filter:user.account", "method": "fixHtmlEntities"
+        }
+    ],
 	"scripts": [
 		"lib/persona.js",
 		"lib/modules/nprogress.js",
