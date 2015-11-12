@@ -4,7 +4,11 @@
     "hooks": [
         {
             "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
-        }],
+        },
+        {
+          "hook": "filter:parse.signature", "method": "addSignatureInlineImages"
+        }
+    ],
 	"scripts": [
 		"lib/persona.js",
 		"lib/modules/nprogress.js",
