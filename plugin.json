@@ -1,6 +1,6 @@
 {
-	"id": "nodebb-theme-persona",
-  "library": "./widgets.js",
+    "id": "nodebb-theme-persona",
+    "library": "./theme.js",
     "hooks": [
         {
             "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
@@ -9,10 +9,10 @@
           "hook": "filter:parse.signature", "method": "addSignatureInlineImages"
         }
     ],
-	"scripts": [
-		"lib/persona.js",
-		"lib/modules/nprogress.js",
-		"lib/modules/autohidingnavbar.min.js",
-		"lib/modules/slideout.min.js"
-	]
+    "scripts": [
+        "lib/persona.js",
+	"lib/modules/nprogress.js",
+	"lib/modules/autohidingnavbar.min.js",
+	"lib/modules/slideout.min.js"
+    ]
 }
